@@ -40,6 +40,7 @@
         "prettier": "^2.0.5"
     },
     "scripts": {
+        "start": "node server.js",
         "start:dev": "nodemon server.js",
         "start:prod": "NODE_ENV=production nodemon server.js",
         "debug": "ndb server.js",
@@ -47,5 +48,8 @@
         "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
     },
     "author": "Faisal Iqbal",
-    "license": "ISC"
+    "license": "ISC",
+    "engines": {
+        "node": ">=10.0.0"
+    }
 }
